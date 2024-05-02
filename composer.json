@@ -1,0 +1,13 @@
+{
+    "name": "henribi/jeedom-plugin-homewizard",
+    "description": "Plugin Homewizard jeedom",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Mips,Henribi"
+        }
+    ],
+    "require": {
+        "mips/jeedom-tools": ">=0.18"
+    }
+}

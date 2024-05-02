@@ -1,0 +1,35 @@
+{
+	"id": "homewizard",
+	"name": "Homewizard",
+	"description": "Plugin pour se connecter à un équipement Homewizard",
+	"utilization": "",
+	"licence": "AGPL",
+	"author": "Mips, Henribi",
+	"require": "4.2",
+	"category": "energy",
+	"hasDependency": false,
+	"hasOwnDeamon": true,
+	"maxDependancyInstallTime": 30,
+	"changelog": "https://henribi.github.io/jeedom-plugin-homewizard/#language#/changelog",
+	"documentation": "https://henribi.github.io/jeedom-plugin-homewizard/#language#/",
+	"changelog_beta": "https://henribi.github.io/jeedom-plugin-homewizard/#language#/changelog",
+	"documentation_beta": "https://henribi.github.io/jeedom-plugin-homewizard/#language#/",
+	"link": {
+		"forum": "https://community.jeedom.com/tag/plugin-homewizard",
+		"video": ""
+	},
+	"language": [
+		"fr_FR",
+		"en_US"
+	],
+	"compatibility": [
+		"smart",
+		"atlas",
+		"luna",
+		"rpi",
+		"docker",
+		"diy",
+		"v4"
+	],
+	"pluginVersion" : "1.0.0"
+}

@@ -1,0 +1,55 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "8b00210d2a1d39c6600164715cc843a6",
+    "packages": [
+        {
+            "name": "mips/jeedom-tools",
+            "version": "v0.23",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Mips2648/jeedom-tools.git",
+                "reference": "cc1805a0953ce58415f9e828cd2defacc1bf362d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Mips2648/jeedom-tools/zipball/cc1805a0953ce58415f9e828cd2defacc1bf362d",
+                "reference": "cc1805a0953ce58415f9e828cd2defacc1bf362d",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "MipsEqLogicTrait": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mips"
+                }
+            ],
+            "description": "Jeedom tools for plugin dev",
+            "support": {
+                "issues": "https://github.com/Mips2648/jeedom-tools/issues",
+                "source": "https://github.com/Mips2648/jeedom-tools/tree/v0.23"
+            },
+            "time": "2024-04-09T11:02:00+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}
