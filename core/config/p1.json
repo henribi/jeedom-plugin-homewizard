@@ -3,6 +3,7 @@
         {
             "logicalId": "total_power_import_t1_kwh",
             "name": "Prélèvement HP",
+            "order": 7,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "CONSUMPTION",
@@ -21,6 +22,7 @@
         {
             "logicalId": "total_power_import_t2_kwh",
             "name": "Prélèvement HC",
+            "order": 8,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "CONSUMPTION",
@@ -39,6 +41,7 @@
         {
             "logicalId": "total_power_export_t1_kwh",
             "name": "Injection HP",
+            "order": 2,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "",
@@ -57,6 +60,7 @@
         {
             "logicalId": "total_power_export_t2_kwh",
             "name": "Injection HC",
+            "order": 3,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "",
@@ -75,6 +79,7 @@
         {
             "logicalId": "total_power_import_kwh",
             "name": "Prélèvement total",
+            "order": 11,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "CONSUMPTION",
@@ -93,6 +98,7 @@
         {
             "logicalId": "dayImport",
             "name": "Prélèvement jour",
+            "order": 9,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "CONSUMPTION",
@@ -111,6 +117,7 @@
         {
             "logicalId": "monthImport",
             "name": "Prélèvement mois",
+            "order": 10,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "CONSUMPTION",
@@ -129,6 +136,7 @@
         {
             "logicalId": "total_power_export_kwh",
             "name": "Injection total",
+            "order": 6,
             "type": "info",
             "subtype": "numeric",
             "isVisible": 1,
@@ -146,6 +154,7 @@
         {
             "logicalId": "dayExport",
             "name": "Injection jour",
+            "order": 4,
             "type": "info",
             "subtype": "numeric",
             "isVisible": 1,
@@ -163,6 +172,7 @@
         {
             "logicalId": "monthExport",
             "name": "Injection mois",
+            "order": 5,
             "type": "info",
             "subtype": "numeric",
             "isVisible": 1,
@@ -180,6 +190,7 @@
         {
             "logicalId": "active_power_w",
             "name": "Puissance prélevée",
+            "order": 23,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "POWER",
@@ -195,6 +206,7 @@
         {
             "logicalId": "active_voltage_l1_v",
             "name": "Tension phase 1",
+            "order": 12,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "VOLTAGE",
@@ -210,6 +222,7 @@
         {
             "logicalId": "active_voltage_l2_v",
             "name": "Tension phase 2",
+            "order": 13,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "VOLTAGE",
@@ -225,6 +238,7 @@
         {
             "logicalId": "active_voltage_l3_v",
             "name": "Tension phase 3",
+            "order": 14,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "VOLTAGE",
@@ -240,6 +254,7 @@
         {
             "logicalId": "active_current_l1_a",
             "name": "Intensité phase 1",
+            "order": 15,
             "type": "info",
             "subtype": "numeric",
             "isVisible": 0,
@@ -254,6 +269,7 @@
         {
             "logicalId": "active_current_l2_a",
             "name": "Intensité phase 2",
+            "order": 16,
             "type": "info",
             "subtype": "numeric",
             "isVisible": 0,
@@ -268,7 +284,8 @@
         {
             "logicalId": "active_current_l3_a",
             "name": "Intensité phase 3",
-            "type": "info",
+            "order": 17,
+           "type": "info",
             "subtype": "numeric",
             "isVisible": 0,
             "isHistorized": 0,
@@ -282,6 +299,7 @@
         {
             "logicalId": "active_power_l1_w",
             "name": "Puissance phase 1",
+            "order": 18,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "POWER",
@@ -297,6 +315,7 @@
         {
             "logicalId": "active_power_l2_w",
             "name": "Puissance phase 2",
+            "order": 19,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "POWER",
@@ -312,6 +331,7 @@
         {
             "logicalId": "active_power_l3_w",
             "name": "Puissance phase 3",
+            "order": 20,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "POWER",
@@ -327,6 +347,7 @@
         {
             "logicalId": "unique_id",
             "name": "ID compteur",
+            "order": 28,
             "type": "info",
             "subtype": "string",
             "isVisible": 0,
@@ -339,6 +360,7 @@
         {
             "logicalId": "active_tariff",
             "name": "Tarif",
+            "order": 1,
             "type": "info",
             "subtype": "string",
             "isVisible": 1,
@@ -352,6 +374,7 @@
          {
             "logicalId": "montly_power_peak_w",
             "name": "Puissance max",
+            "order": 21,
             "type": "info",
             "subtype": "numeric",
             "generic_type": "POWER",
@@ -370,6 +393,7 @@
         {
             "logicalId": "montly_power_peak_timestamp",
             "name": "Puissance max (Date)",
+            "order": 22,
             "type": "info",
             "subtype": "string",
             "isVisible": 1,
@@ -382,6 +406,7 @@
         {
             "logicalId": "product_type",
             "name": "Type de produit",
+            "order": 24,
             "type": "info",
             "subtype": "string",
             "isVisible": 1,
@@ -394,6 +419,7 @@
         {
             "logicalId": "product_name",
             "name": "Nom du produit",
+            "order": 25,
             "type": "info",
             "subtype": "string",
             "isVisible": 1,
@@ -406,6 +432,7 @@
         {
             "logicalId": "serial",
             "name": "S/N",
+            "order": 26,
             "type": "info",
             "subtype": "string",
             "isVisible": 1,
@@ -418,6 +445,7 @@
         {
             "logicalId": "firmware_version",
             "name": "Firmware version",
+            "order": 27,
             "type": "info",
             "subtype": "string",
             "isVisible": 1,
