@@ -54,6 +54,7 @@ class homewizard extends eqLogic {
 		if ($deamon_info['launchable'] != 'ok') {
 			throw new Exception(__('Veuillez vérifier la configuration', __FILE__));
 		}
+		// pour forcer le refreshInfos au démarrage du démon
 		foreach (self::byType(__CLASS__, true) as $eqLogic) {
 			$productType = $eqLogic->getCmd('info', 'product_type');
 			if (is_object($productType)) {
@@ -219,7 +220,7 @@ class homewizard extends eqLogic {
 						case 'total_power_import_t2_kwh':
 						case 'total_power_export_kwh':
 						case 'total_power_export_t1_kwh':
-						case 'total_power_export_t1_kwh':
+						case 'total_power_export_t2_kwh':
 						case 'active_power_w':
 						case 'active_power_l1_w':
 						case 'active_power_l2_w':
