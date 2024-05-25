@@ -236,7 +236,14 @@ class homewizard extends eqLogic {
 							//$results[$key] = $value;
 							break;
 						case 'active_tariff':
-							$value = 1 ? "HP" : "HC";
+							if ($value == '1' ) {
+                              $value = "HP";
+                            } else if ($value == '2') {
+                              $value = "HC";
+                            } else {
+                            	$value = '??';
+                            }                            
+
 							$this->checkAndUpdateCmd($key, $value);
 							break;
 						case 'montly_power_peak_timestamp':
