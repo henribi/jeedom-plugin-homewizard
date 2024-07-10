@@ -18,13 +18,13 @@
 
 require_once dirname(__FILE__) . '/../../../core/php/core.inc.php';
 
-function homewizard_install() {
-    homewizard::setDaemon();
+function homewizardd_install() {
+    homewizardd::setDaemon();
 
-    $cron = cron::byClassAndFunction('homewizard', 'dailyReset');
+    $cron = cron::byClassAndFunction('homewizardd', 'dailyReset');
     if (!is_object($cron)) {
         $cron = new cron();
-        $cron->setClass('homewizard');
+        $cron->setClass('homewizardd');
         $cron->setFunction('dailyReset');
     }
     $cron->setEnable(1);
@@ -34,13 +34,13 @@ function homewizard_install() {
     $cron->save();
 }
 
-function homewizard_update() {
-    homewizard::setDaemon();
+function homewizardd_update() {
+    homewizardd::setDaemon();
 
-    $cron = cron::byClassAndFunction('homewizard', 'dailyReset');
+    $cron = cron::byClassAndFunction('homewizardd', 'dailyReset');
     if (!is_object($cron)) {
         $cron = new cron();
-        $cron->setClass('homewizard');
+        $cron->setClass('homewizardd');
         $cron->setFunction('dailyReset');
     }
     $cron->setEnable(1);
@@ -50,9 +50,9 @@ function homewizard_update() {
     $cron->save();
 }
 
-function homewizard_remove() {
+function homewizardd_remove() {
     try {
-        $crons = cron::searchClassAndFunction('homewizard', 'dailyReset');
+        $crons = cron::searchClassAndFunction('homewizardd', 'dailyReset');
         if (is_array($crons)) {
             foreach ($crons as $cron) {
                 $cron->remove();

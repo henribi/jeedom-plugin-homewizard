@@ -3,7 +3,7 @@
 require_once __DIR__ . '/../../../../core/php/core.inc.php';
 require_once dirname(__FILE__) . '/../../vendor/autoload.php';
 
-class homewizard extends eqLogic {
+class homewizardd extends eqLogic {
 	use MipsEqLogicTrait;
 
 	/**
@@ -86,7 +86,7 @@ class homewizard extends eqLogic {
 	}
 
 	public static function daemon() {
-		/** @var homewizard */
+		/** @var homewizardd */
 		foreach (self::byType(__CLASS__, true) as $eqLogic) {
 			$eqLogic->refreshMeasures();
 			// To avoid running refreshInfos each time. (Each: 3600 seconds)
@@ -104,11 +104,11 @@ class homewizard extends eqLogic {
 	}
 
 	public static function cron() {
-		/** @var homewizard */
+		/** @var homewizardd */
 		foreach (self::byType(__CLASS__, true) as $eqLogic) {
 			$currentImport = $eqLogic->getCmdInfoValue('total_power_import_kwh', 0);   //$eqLogic->getCmdInfoValue('totalImport', 0);
 
-			/** @var homewizardCmd */
+			/** @var homewizarddCmd */
 			$dayImport = $eqLogic->getCmd('info', 'dayImport');
 			if (is_object($dayImport)) {
 				$dayIndex = $dayImport->getCache('index', 0);
@@ -118,7 +118,7 @@ class homewizard extends eqLogic {
 				}
 				$dayImport->event(round($currentImport - $dayIndex, 3));
 			}
-			/** @var homewizardCmd */
+			/** @var homewizarddCmd */
 			$monthImport = $eqLogic->getCmd('info', 'monthImport');
 			if (is_object($monthImport)) {
 				$monthIndex = $monthImport->getCache('index', 0);
@@ -131,7 +131,7 @@ class homewizard extends eqLogic {
 
 			$currentExport = $eqLogic->getCmdInfoValue('total_power_export_kwh', 0);  // $eqLogic->getCmdInfoValue('totalExport', 0);
 
-			/** @var homewizardCmd */
+			/** @var homewizarddCmd */
 			$dayExport = $eqLogic->getCmd('info', 'dayExport');
 			if (is_object($dayExport)) {
 				$dayIndex = $dayExport->getCache('index', 0);
@@ -141,7 +141,7 @@ class homewizard extends eqLogic {
 				}
 				$dayExport->event(round($currentExport - $dayIndex, 3));
 			}
-			/** @var homewizardCmd */
+			/** @var homewizarddCmd */
 			$monthExport = $eqLogic->getCmd('info', 'monthExport');
 			if (is_object($monthExport)) {
 				$monthIndex = $monthExport->getCache('index', 0);
@@ -155,18 +155,18 @@ class homewizard extends eqLogic {
 	}
 
 	public static function dailyReset() {
-		/** @var homewizard */
+		/** @var homewizardd */
 		foreach (self::byType(__CLASS__, true) as $eqLogic) {
 			$currentImport = $eqLogic->getCmdInfoValue('total_power_import_kwh', 0);
 			$currentExport = $eqLogic->getCmdInfoValue('total_power_export_kwh', 0);
 
 
-			/** @var homewizardCmd */
+			/** @var homewizarddCmd */
 			$dayImport = $eqLogic->getCmd('info', 'dayImport');
 			if (is_object($dayImport)) {
 				$dayImport->setCache('index', $currentImport);
 			}
-			/** @var homewizardCmd */
+			/** @var homewizarddCmd */
 			$dayExport = $eqLogic->getCmd('info', 'dayExport');
 			if (is_object($dayExport)) {
 				$dayExport->setCache('index', $currentExport);
@@ -176,12 +176,12 @@ class homewizard extends eqLogic {
 			$lastDay = $date->format('Y-m-t');
 			$toDay = $date->format('Y-m-d');
 			if ($lastDay === $toDay) {
-				/** @var homewizardCmd */
+				/** @var homewizarddCmd */
 				$monthImport = $eqLogic->getCmd('info', 'monthImport');
 				if (is_object($monthImport)) {
 					$monthImport->setCache('index', $currentImport);
 				}
-				/** @var homewizardCmd */
+				/** @var homewizarddCmd */
 				$monthExport = $eqLogic->getCmd('info', 'monthExport');
 				if (is_object($monthExport)) {
 					$monthExport->setCache('index', $currentExport);
@@ -356,10 +356,10 @@ class homewizard extends eqLogic {
 	}
 }
 
-class homewizardCmd extends cmd {
+class homewizarddCmd extends cmd {
 
 	public function execute($_options = array()) {
 		$eqLogic = $this->getEqLogic();
-		log::add('homewizard', 'debug', "command: {$this->getLogicalId()} on {$eqLogic->getLogicalId()} : {$eqLogic->getName()}");
+		log::add('homewizardd', 'debug', "command: {$this->getLogicalId()} on {$eqLogic->getLogicalId()} : {$eqLogic->getName()}");
 	}
 }

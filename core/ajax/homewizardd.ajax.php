@@ -27,7 +27,7 @@ try {
 	ajax::init();
 
 	if (init('action') == 'createCommands') {
-		/** @var homewizard */
+		/** @var homewizardd */
 		$eqLogic = eqLogic::byId(init('id'));
 		if (!is_object($eqLogic)) {
 			throw new Exception(__('eqLogic non trouvé : ', __FILE__) . init('id'));
@@ -43,6 +43,6 @@ try {
 	throw new Exception(__('Aucune méthode correspondante à : ', __FILE__) . init('action'));
 	/*     * *********Catch exeption*************** */
 } catch (Exception $e) {
-	log::add('homewizard', 'error', $e->getMessage());
+	log::add('homewizardd', 'error', $e->getMessage());
 	ajax::error(displayException($e), $e->getCode());
 }

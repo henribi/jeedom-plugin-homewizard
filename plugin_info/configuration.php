@@ -31,7 +31,7 @@ if (!isConnect()) {
                 <sup><i class="fas fa-question-circle" title="{{Un délai court augmentera la charge de votre système}}"></i></sup>
             </label>
             <div class="col-sm-1">
-                <input class="configKey form-control" data-l1key="daemonSleepTime" placeholder="5" />
+                <input class="configKey form-control" data-l1key="daemonSleepTime" placeholder="30" />
             </div>
         </div>
     </fieldset>

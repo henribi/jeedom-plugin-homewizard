@@ -2,7 +2,7 @@
 if (!isConnect('admin')) {
     throw new Exception('{{401 - Accès non autorisé}}');
 }
-$plugin = plugin::byId('homewizard');
+$plugin = plugin::byId('homewizardd');
 sendVarToJS('eqType', $plugin->getId());
 $eqLogics = eqLogic::byType($plugin->getId());
 ?>
@@ -137,9 +137,9 @@ $eqLogics = eqLogic::byType($plugin->getId());
                                 </div>
 <!----
                                 <div class="form-group">
-                                    <label class="col-sm-3 control-label">{{Homewizard}}</label>
+                                    <label class="col-sm-3 control-label">{{homewizardd}}</label>
                                     <div class="col-sm-1" style="width:20px">
-                                    <label class="checkbox-inline" style="vertical-align:top;"><input type="checkbox" class="eqLogicAttr" data-l1key="configuration" data-l2key="flagHomewizard"/></label>
+                                    <label class="checkbox-inline" style="vertical-align:top;"><input type="checkbox" class="eqLogicAttr" data-l1key="configuration" data-l2key="flaghomewizardd"/></label>
                                 </div>
 ---->
                             </div>
@@ -179,5 +179,5 @@ $eqLogics = eqLogic::byType($plugin->getId());
     </div>
 </div>
 
-<?php include_file('desktop', 'homewizard', 'js', 'homewizard'); ?>
+<?php include_file('desktop', 'homewizardd', 'js', 'homewizardd'); ?>
 <?php include_file('core', 'plugin.template', 'js'); ?>

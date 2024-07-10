@@ -1,5 +1,5 @@
 {
-	"id": "homewizard",
+	"id": "homewizardd",
 	"name": "Homewizard",
 	"description": "Plugin pour se connecter à un équipement Homewizard",
 	"utilization": "",
@@ -15,7 +15,7 @@
 	"changelog_beta": "https://henribi.github.io/jeedom-plugin-homewizard/#language#/changelog",
 	"documentation_beta": "https://henribi.github.io/jeedom-plugin-homewizard/#language#/",
 	"link": {
-		"forum": "https://community.jeedom.com/tag/plugin-homewizard",
+		"forum": "https://community.jeedom.com/tag/plugin-homewizardd",
 		"video": ""
 	},
 	"language": [
